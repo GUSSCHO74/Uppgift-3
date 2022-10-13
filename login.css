@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(97, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+    background-color: grey;
+    padding: 2em;
+    border-radius: 20px;
+}
+input {
+    padding: 12px;
+    width: 80%;
+}
+.send {
+    width: 5vw;
+}
+.button {
+    display: flex;
+    display: row;
+}
+.register {
+    color: white;
+    list-style: none;
+}
+h1, h2 {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
