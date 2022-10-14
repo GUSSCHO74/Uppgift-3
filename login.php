@@ -23,7 +23,7 @@ function checkExistingLogin($validateLogin, $savedUsername, $savedPassword){
         $password = trim($userInfo[1]);
 
         if($savedUsername == $username && $savedPassword == $password){
-            echo "<h1>Welcome back ", $username, "</h1>";
+            echo "<h1>Welcome back ", $username, !"</h1>";
             return $loginStatus = true;
         }
         else{
@@ -36,7 +36,7 @@ $_SESSION["validateToken"] = false;
 
 $loginStatus = checkExistingLogin($validateLogin, $_POST["username"], $_POST["password"]);
 
-if($loginStatus == true ){
+if($loginStatus == true){
 
     $_SESSION["username"] = $_POST["username"];
     $_SESSION["validateToken"] = true;
@@ -44,7 +44,7 @@ if($loginStatus == true ){
     <form action="upload.php" method="post" enctype="multipart/form-data">
     <input type="file" name="fileToUpload" id="fileToUpload" />
     <input type="submit" value="Ladda upp" name="submit" />
-  </form>';
+        </form>';
 }
 ?>
     <a href="login.html">Home</a>
